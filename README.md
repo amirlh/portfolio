@@ -81,7 +81,12 @@ MPC controllers in Python for a 12-state thrust-vector-controlled rocket: linear
 
 Reimplemented CSIL and SOAR from the original papers and measured how their sample efficiency changes with the number of expert demonstrations, on Gymnasium control tasks.
 
-[Code and report on GitHub](https://github.com/amirlh/csil-soar-benchmark)
+<img src="assets/imitation_learning/cartpole_expert_vs_csil_soar.gif" width="560" alt="CartPole: PPO expert on the left, CSIL+SOAR policy trained from one demonstration on the right">
+<img src="assets/imitation_learning/acrobot_expert_vs_csil_soar.gif" width="560" alt="Acrobot: PPO expert on the left, CSIL+SOAR policy trained from 50 demonstrations on the right">
+
+PPO expert on the left, imitation policy on the right, same evaluation seed. CartPole is learned from a single expert demonstration and holds the pole for the full 500 steps; Acrobot, from 50 demonstrations, swings up in about as many steps as the expert.
+
+[Code, videos and report on GitHub](https://github.com/amirlh/csil-soar-benchmark)
 
 ---
 
